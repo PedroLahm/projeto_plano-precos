@@ -13,7 +13,7 @@ body{
 
 main{
     height: 100vh;
-    padding: 10px;
+    padding: 20px;
 
     display: flex;
     flex-flow: row wrap;
@@ -92,7 +92,7 @@ section p{
     font-weight: bold;
     letter-spacing: 1px;
 
-    border-bottom: 1px solid #549efe58;
+    border-bottom: 1px solid #549efe33;
 
     margin-bottom: 10px;
     padding-bottom: 10px;
@@ -128,4 +128,24 @@ section button:hover{
 section#padrao button{
     background-color: #0a5ecd;
     color: white;
+}
+
+
+
+
+@media screen and (max-width: 810px){
+    article{
+        gap: 50px;
+    }
+
+    section{
+        border: none;
+        padding: 0;
+    }
+
+    section#premium{
+        margin-top: 30px;
+        padding: 30px 0px;
+        border-top: 1px solid #549efe33;
+    }
 }
