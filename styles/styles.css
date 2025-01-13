@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #549FFE;
+}
+
+section{
+    background-color: white;
+
+    text-align: center;
+    text-transform: uppercase;
+    
+    font-weight: bolder;
+    letter-spacing: 1px;
+    
+    padding: 10px;
+}
+
+section h2{
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: grey;
+    
+    margin: 15px 0 18px;
+    padding-bottom: 30px;
+    
+    border-bottom: 1px solid rgba(35, 139, 174, 0.105);
+}
+
+section h3{
+    color: #0353c2;
+    font-size: 1.5em;
+    letter-spacing: 1.5px;
+}
+
+section button{
+    text-transform: uppercase;
+    color: #0353c2;
+    font-weight: bold;
+
+    background-color: white;
+    padding: 8px;
+
+    border: 1px solid #39A4FF;
+    border-radius: 3px;
+}
+
+section p{
+    color: rgb(35, 139, 174);
+    font-size: 11px;
+    
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+
+    border-bottom: 1px solid rgba(35, 139, 174, 0.105);
+}
+
+section div{
+    width: 90%;
+    height: 210px;
+    margin: auto;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+section#basico div#imagem-basico{
+    background-image: url("../images/icon1.png");
+}
+
+section#padrao div#imagem-padrao{
+    background-image: url("../images/icon2.png");
+}
+
+section#premium div#imagem-premium{
+    background-image: url("../images/icon3.png");
+}
