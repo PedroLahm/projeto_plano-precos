@@ -10,8 +10,7 @@
 
 html, body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
 
     overflow-x: hidden;
 }
@@ -19,8 +18,8 @@ html, body{
 main{
     background-color: #519AF7;
     
-    width: 100vw;
-    height: 100vh;
+    max-width: 100vw;
+    min-height: 100vh;
 
     display: flex;
     flex-flow: column;
@@ -162,4 +161,29 @@ section#small-team button:hover{
 
 #image3{
     background-image: url(../images/icon3.png);
+}
+
+
+
+
+/*RESPONSIVIDADE*/
+@media (max-width: 769px){
+    article{
+        border-radius: 0;
+    }
+
+    section#small-team{
+        border-right: none;
+    }
+
+    section#enterprise{
+        margin-top: 80px;
+    }
+}
+
+@media (max-width: 426px){
+    section#small-team{
+        margin-top: 80px;  
+        border-left: none;
+    }
 }
