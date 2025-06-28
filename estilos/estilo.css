@@ -1,0 +1,153 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100vw;
+    height: 100vh;
+    background-color: #549FFE;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    background-color: white;
+
+    border-radius: 5px;
+
+    width: 65%;
+    padding: 10px;
+
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.200);
+}
+
+article{
+    display: flex;
+    justify-content: space-between;
+
+    padding: 10px;
+}
+
+section{
+    flex: 1 1 350px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+section:nth-of-type(2){
+    border-right: 1px solid #eaeaea;
+    border-left: 1px solid #eaeaea;
+}
+
+hr{
+    border: 2px solid #eaeaea;
+    border-radius: 5px;
+}
+
+h1{
+    color: #9b9a9a;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 1px;
+
+    margin-top: 15px;
+}
+
+p{
+    color: #0F63EF;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+}
+
+.benefits{
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+}
+
+.benefits p{
+    letter-spacing: 1.5px;
+    font-size: 11px;
+    padding: 15px 0;
+
+    border-top: 1px solid #eaeaea;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.prices{
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/*buttons*/
+button{
+      background-color: white;
+
+    text-transform: uppercase;
+    color: #0F63EF;
+    font-weight: bold;
+
+    border: 1px solid #0F63EF;
+    border-radius: 10px;
+
+    padding: 12px;
+    width: 150px;
+
+    cursor: pointer;
+    transition: .3s;
+}
+
+button:hover{
+    background-color: #549FFE;
+    color: white;
+
+    border: 1px solid #549FFE;
+}
+
+section:nth-of-type(2) button{
+    background-color: #549FFE;
+    color: white;
+
+    border: 1px solid #549FFE;
+}
+
+section:nth-of-type(2) button:hover{
+    background-color: white;
+    color: #549FFE;
+}
+
+/*Images*/
+section .icon{
+    background-size: cover;
+    background-position: center;
+
+    width: 200px;
+    height: 130px;
+}
+
+section #image1{
+    background-image: url(../images/icon1.png);
+}
+
+section #image2{
+    background-image: url(../images/icon2.png);
+}
+
+section #image3{
+    background-image: url(../images/icon3.png);
+}
